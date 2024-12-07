@@ -213,7 +213,7 @@
 												type="text"
 												class="my-0.5 w-full text-sm outline-none bg-transparent"
 												autocomplete="name"
-												placeholder={$i18n.t('Enter Your Full Name')}
+												placeholder={$i18n.t('Masukkan Nama Lengkap')}
 												required
 											/>
 										</div>
@@ -228,7 +228,7 @@
 												class="my-0.5 w-full text-sm outline-none bg-transparent"
 												autocomplete="username"
 												name="username"
-												placeholder={$i18n.t('Enter Your Username')}
+												placeholder={$i18n.t('Masukkan Username')}
 												required
 											/>
 										</div>
@@ -241,7 +241,7 @@
 												class="my-0.5 w-full text-sm outline-none bg-transparent"
 												autocomplete="email"
 												name="email"
-												placeholder={$i18n.t('Enter Your Email')}
+												placeholder={$i18n.t('Masukkan Email')}
 												required
 											/>
 										</div>
@@ -254,7 +254,7 @@
 											bind:value={password}
 											type="password"
 											class="my-0.5 w-full text-sm outline-none bg-transparent"
-											placeholder={$i18n.t('Enter Your Password')}
+											placeholder={$i18n.t('Masukkan Password')}
 											autocomplete="current-password"
 											name="current-password"
 											required
@@ -279,15 +279,15 @@
 											{mode === 'signin'
 												? $i18n.t('Sign in')
 												: ($config?.onboarding ?? false)
-													? $i18n.t('Create Admin Account')
-													: $i18n.t('Create Account')}
+													? $i18n.t('Buat Admin Akun')
+													: $i18n.t('Buat Akun')}
 										</button>
 
 										{#if $config?.features.enable_signup && !($config?.onboarding ?? false)}
 											<div class=" mt-4 text-sm text-center">
 												{mode === 'signin'
-													? $i18n.t("Don't have an account?")
-													: $i18n.t('Already have an account?')}
+													? $i18n.t("Belum punya akun?")
+													: $i18n.t('Sudah punya akun?')}
 
 												<button
 													class=" font-medium underline"
@@ -300,7 +300,7 @@
 														}
 													}}
 												>
-													{mode === 'signin' ? $i18n.t('Sign up') : $i18n.t('Sign in')}
+													{mode === 'signin' ? $i18n.t('Mendaftar') : $i18n.t('Masuk')}
 												</button>
 											</div>
 										{/if}

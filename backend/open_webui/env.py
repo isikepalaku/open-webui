@@ -101,11 +101,11 @@ log.setLevel(SRC_LOG_LEVELS["CONFIG"])
 
 WEBUI_NAME = os.environ.get("WEBUI_NAME", "Reserse AI")
 if WEBUI_NAME != "Reserse AI":
-    WEBUI_NAME += " (Reserse AI)"
+    WEBUI_NAME += " Intelegent Investigator Assistant"
 
 WEBUI_URL = os.environ.get("WEBUI_URL", "http://localhost:3000")
 
-WEBUI_FAVICON_URL = "https://openwebui.com/favicon.png"
+WEBUI_FAVICON_URL = "https://chat.reserse.id/static/favicon.png"
 
 
 ####################################
